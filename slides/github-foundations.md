@@ -6,10 +6,12 @@ title: GitHub Foundations Course Slides
 description: A slide deck to the GitHub Foundations class.
 chapters: [
   'preroll',
-  'intro',
   'version-control',
   'commit-basics',
   'branch-basics',
   'tag-basics',
+  'github/pull-requests',
+  'github/contributors',
+  'github/organizations',
   'goodbye']
 ---

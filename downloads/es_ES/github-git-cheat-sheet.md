@@ -22,12 +22,12 @@ Configura la información del usuario para todos los respositorios locales
 
 ```$ git config --global user.name "[name]"```
 
-Establece el nombre que estará asociado a tus commits
+Establece el nombre que se usará en sus transacciones de commit.
 
 
 ```$ git config --global user.email "[email address]"```
 
-Establece el e-mail que estará asociado a sus commits
+Establece el e-mail que se usará en sus transacciones de commit.
 
 
 ## Crear repositorios
@@ -54,7 +54,7 @@ Enumera todos los archivos nuevos o modificados de los cuales se van a guardar c
 
 ```$ git diff```
 
-Muestra las diferencias entre archivos que no se han enviado aún al área de espera
+Muestra las diferencias en archivos que no están en el área de espera.
 
 
 ```$ git add [file]```
@@ -64,7 +64,7 @@ Guarda el estado del archivo en preparación para realizar un commit
 
 ```$ git diff --staged```
 
-Muestra las diferencias del archivo entre el área de espera y la última versión del archivo
+Muestra las diferencias en archivos incluidos en el área de espera.
 
 
 ```$ git reset [file]```
@@ -74,7 +74,7 @@ Mueve el archivo del área de espera, pero preserva su contenido
 
 ```$ git commit -m"[descriptive message]"```
 
-Registra los cambios del archivo permanentemente en el historial de versiones
+Guarda el estado actual del archivo en el historial de versiones.
 
 ## Cambios grupales
 Nombra una serie de commits y combina esfuerzos ya completados
@@ -110,12 +110,12 @@ Reubica y retira los archivos de los cuales se tiene una versión
 
 ```$ git rm [file]```
 
-Borra el archivo del directorio activo y lo pone en el área de espera en un estado de eliminación
+Borra el archivo del directorio y añade el cambio al área de espera.
 
 
 ```$ git rm --cached [file]```
 
-Retira el archivo del historial de control de versiones, pero preserva el archivo a nivel local
+Borra el historial del archivo del control de versiones, preservando el archivo.
 
 
 ```$ git mv [file-original] [file-renamed]```
@@ -172,7 +172,7 @@ Enumera el historial de versiones para la rama actual
 
 ```$ git log --follow [file]```
 
-Enumera el historial de versiones para el archivo, incluidos los cambios de nombre
+Enumera el historial del archivo, incluyendo renombrados.
 
 
 ```$ git diff [first-branch]...[second-branch]```
@@ -190,7 +190,7 @@ Borra errores y elabora un historial de reemplazo
 
 ```$ git reset [commit]```
 
-Deshace todos los commits después de `[commit]`, preservando los cambios localmente
+Deshace los commits después de `[commit]`, preservando cambios locales.
 
 ```$ git reset --hard [commit]```
 
